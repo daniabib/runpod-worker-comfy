@@ -2,11 +2,11 @@ version: "3.8"
 
 services:
   comfyui:
-    image: danabib/runpod-worker-comfy:dev-sdxl-v0.2.3
+    image: danabib/runpod-worker-comfy:dev-sdxl-v0.2.4
     container_name: comfyui-worker
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
-      - SERVE_API_LOCALLY=true
+      - SERVE_API_LOCALLY=false
     ports:
       - "8000:8000"
       - "8188:8188"
